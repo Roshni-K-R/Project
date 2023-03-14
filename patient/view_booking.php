@@ -28,29 +28,34 @@
 					$count = mysqli_num_rows($result);
 
 					if($count>=1){
-						echo "<table border='1' color='purple' align='center' cellpadding='32'>
+						echo "<table border='1' color='purple' text-align='center' cellpadding='32'>
 							<tr>
+	  						    <th>Booking Id</th>
 								<th>My Disease Type</th>
 								<th>My Doctor</th>
 								<th>Appoinment Date</th>
 								<th>Time</th>
 								<th>Action</th>
+								<th>Action1</th>
 							</tr>";
 						while($row=mysqli_fetch_array($result)){
 								echo "<tr>";
+								echo "<td>".$row['booking_id']."</td>";
 								echo "<td>".$row['expertise']."</td>";
 								echo "<td>".$row['dname']."</td>";
 								echo "<td>".$row['dates']."</td>";
 								echo "<td>".$row['tyme']."</td>";
-						?>
-								<td><a href="cancelBooking.php?dates=<?php echo $row['dates'] ?>">Cancel</a></td>;
-						<?php
-								echo "</tr>";
-						}
+								?>  
+								<td><a href="cancel_booking.php? booking_id=<?php echo $row['booking_id'] ?>" onclick="return confirm('Are you sure you want to delete?');">Cancel</a></td>
+								
+						<?php	        
+						
+						}   	echo "</tr>";
+					
 						echo "</table>";
 					}
 					else{
-						print "<p align='center'>Sorry, No match found for your search result..!!!</p>";
+						print "<p align='center'>Sorry, No appointments yet..!!!</p>";
 					}
 
 					?>
@@ -58,12 +63,12 @@
 					<!-- Cancel Booking -->
 
 
-			<?php
+			<!-- <?php
 							include('config.php');
 							if(isset($_POST['submit'])){
 							
 							// sql to delete a record
-							$sql = "DELETE * FROM booking";
+							$sql = " DELETE FROM booking WHERE `booking`.`booking_id` = .$row[booking_id] ";
 
 							if (mysqli_query($conn, $sql)) {
 							    echo "<script>alert('Your booking has been Canceled!');</script>";
@@ -73,7 +78,7 @@
 
 							mysqli_close($conn);
 						}
-					?> 
+					?>  -->
 
 
 

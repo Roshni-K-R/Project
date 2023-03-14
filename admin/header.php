@@ -23,13 +23,18 @@
 	 ?>
 
 
-<div class="container-fluid" style="background:url(adminimg/newimage1.jpg) fixed no-repeat;background:cover; height:400px; ">
-		<div class="header_top">
-			<span style="font-size:50px;color:white;font-weight:bolder;margin-left:15px;">Doctor Appointment System</span>
+<div class="container-fluid" style="background:cover; height:400px; ">
+		<div class="header_top" >
+		<div class="menu" style="color:antiquewhite;font-size:25px;text-align:center;">
+		Online Doctor Appointment System
+	</div>
+			<span style="font-size:50px;color:white;font-weight:bolder;margin-left:15px;"></span>
 		</div>
+		
 
 	<!-- 	this is for menu -->
 	<div class="navbar navbar-default nav">
+	
 		<nav class="menu">
 			<ul>
 				

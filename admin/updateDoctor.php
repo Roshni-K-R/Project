@@ -8,34 +8,34 @@
 <!-- for retriving data -->
 				<?php 
 							include('../config.php');
-							$sql="SELECT * FROM doctor where userid='" . $_SESSION["userid"] . "'";
+							$sql="SELECT * FROM doctor where email='" . $_GET["email"] . "'";
 			
-							$q=mysqli_query($conn,$sql);
-							$row=mysqli_num_rows($q);
+						//	$q=mysqli_query($conn,$sql);
+						//	$row=mysqli_num_rows($q);
 							
-							$data=mysqli_fetch_array($q);
-							$pic=$data[11];
-							$name=$data[2];
-							$address=$data[3];
-							$contact=$data[4];
-							$email=$data[5];
-							$userid=$data[9];
-							$expertise=$data[6];
-							$fee=$data[8];
-							$pic = $data[11];
+						//	$data=mysqli_fetch_array($q);
+						//	$pic=$data[11];
+							$name=$_GET['name'];
+							$address=$_GET['address'];
+							$contact=$_GET['contact'];
+							$email=$_GET['email'];
+							$doc_id=$_GET['doc_id'];
+							$expertise=$_GET['expertise'];
+							$fee=$_GET['fee'];
+						//	$pic = $data[11];
 
 							mysqli_close($conn);
 				?>
 <!-- for retriving data -->
 
 <div class="login" style="background-color:#fff;">
-		<h3 class="text-center" style="background-color:#272327;color: #fff;">My Details</h3>
+		<h3 class="text-center" style="background-color:#272327;color: #fff; text-align:center;">Doctor Details</h3>
 			<div class="formstyle" style="float: right;padding:20px;border: 1px solid lightgrey;margin-right:415px; margin-bottom:30px;background-color:#f3f3f8;color:#141313;">
 				<form action="" method="post" class="text-center form-group">
-					<img src="../photo/<?php echo @$pic; ?>" style="padding-left:40px;width:165px;height:115px;float: left;margin-bottom:10px;margin-left:35px;"/>
-					<label>
+					<!-- <img src="../photo/<?php echo @$pic; ?>" style="padding-left:40px;width:165px;height:115px;float: left;margin-bottom:10px;margin-left:35px;"/> -->
+					<!-- <label>
 						 <input type="file" name="pic" value="<?php {echo @$pic;} ?>" >
-					</label><br><br>
+					</label><br><br> -->
 
 					<label>
 						Your Name: <input type="text" name="name" value="<?php echo $name; ?>" required>
@@ -50,17 +50,17 @@
 						Contact: <input type="text" name="contact" value="<?php echo $contact; ?>"  required="required" />
 					</label><br><br>
  					<label>
-						Email: <input type="email" name="email" value="<?php echo $email; ?>" " required>
+						Email: <input type="email" name="email" value="<?php echo $email; ?>"  required>
 					</label><br><br>
 					<label>
-						Userid: <input type="text" name="userid" value="<?php echo $userid; ?>"  disabled>
+						Doctorid: <input type="text" name="doctorid" value="<?php echo $doc_id; ?>"  disabled>
 					</label><br><br>
 					<label>
 						Expert in: <input type="email" name="email" value="<?php echo $expertise; ?>"  disabled>
 					</label><br><br>
 
 					<label>
-						Fee: <input type="text" name="fee" value="<?php echo $fee; ?>"  disabled>
+						Fee: <input type="text" name="fee" value="<?php echo $fee; ?>"  required>
 					</label><br><br>
 					<label>
 
@@ -85,7 +85,7 @@
 						if(isset($_POST['submit'])){
 							
 
-							$sql="UPDATE doctor SET name='" .$_POST["name"]. "' ,address='" .$_POST["address"]."' , contact='" .$_POST["contact"]. "',email='" .$_POST["email"]. "' ,pic='" .$_POST["pic"]. "' WHERE userid='" . $_SESSION["userid"] . "'";
+							$sql="UPDATE doctor SET name='" .$_POST["name"]. "' ,address='" .$_POST["address"]."' , contact='" .$_POST["contact"]. "'  WHERE email='" . $_SESSION["email"] . "'";
 		
 							if (mysqli_query($conn, $sql)) {
 						    echo "<script>alert(' Record updated successfully');</script>";
@@ -95,20 +95,21 @@
 
 						mysqli_close($conn);
 													}
-					?> 
-			<!-- update information End -->
+					?>  
+			<!--update information End
 
 
-  <?php include('../footer.php'); ?>
-
-
+  
 	
-	</div><!--  containerFluid Ends -->
+	</div>
+	< containerFluid Ends -->
 
 
 
+<!-- 
+	<script src="js/bootstrap.min.js"></script> -->
 
-	<script src="js/bootstrap.min.js"></script>
+
 
 
 

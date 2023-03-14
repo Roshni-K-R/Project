@@ -1,5 +1,5 @@
 <div class="container-fluid">
-		<div class="header_top">
+		<div class="header_top" style="background:url(img/newimage1.jpg) fixed no-repeat;">
 			
 			<!--<span style="font-size:50px;color:black;font-weight:bolder;margin-left:15px;">Doctor Appoinment System</span>-->
 		</div>
@@ -16,4 +16,7 @@
 				<li><a href="logout.php">Log Out</a></li>
 			</ul>
 		</nav>
+<div class="mywish" style="background:url(img/dash1.jpg);">
+
+</div>
 	</div>

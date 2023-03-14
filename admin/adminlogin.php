@@ -19,7 +19,10 @@
 	<div class="container" style="background:url(img/newimage1.jpg) fixed no-repeat;" >
 		<span style= "font-family: 'El Messiri', sans-serif;background-size:cover;"></span>
 		<div class="header_top">
-			<span style="font-size:50px;color:white;background:url(img/header_img4.jpg) fixed no-repeat;font-weight:bolder;margin-left:15px;">Doctor Appoinment System</span>
+		<div class="menu" style="color:antiquewhite;font-size:25px;text-align:center;">
+		Online Doctor Appointment System
+	</div>
+			<span style="font-size:50px;color:white;background:url(img/header_img4.jpg) fixed no-repeat;font-weight:bolder;margin-left:15px;"></span>
 			<div class="hearder1"style="background:url(admin/adminimg/newimage1.jpg);">
 			
 		</div>

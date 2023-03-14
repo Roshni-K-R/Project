@@ -51,7 +51,10 @@
 								echo "<td>".$row['bgroup']."</td>";
 								
 								echo "<td>".$row['email']."</td>";
-								echo "<td><button type='submit' name='submit' style='color:#000;'>Update</button><button type='submit' name='submit' style='color:#000;'>Delete</button></td>";
+								?>
+								<td><a href="updatePatient.php?id=<?php echo $row['id'];?> & name=<?php echo $row['name'];?>& age=<?php echo $row['age'];?>& contact=<?php echo $row['contact'];?> & address=<?php echo $row['address'];?>& bgroup=<?php echo $row['bgroup'];?>& email=<?php echo $row['email'];?> "><button >Update</a></button>
+								<a href="delete.php?id=<?php echo $row['id'];?>"><button>Delete</a></td></button>
+								<?php	
 								echo "</tr>";
 						}
 						echo "</table>";

@@ -38,7 +38,9 @@
 								echo "<td>".$row['id']."</td>";
 								echo "<td>".$row['email']."</td>";
 								echo "<td>".$row['feedback']."</td>";
-								echo "<td><button type='submit' name='submit' style='color:#000;'>Delete</button></td>";
+								?>
+								<td><a href="deleteFeedback.php?id=<?php echo $row['id'];?>"><button type='submit' name='submit' style='color:#000;'>Delete</a></button></td>
+								<?php
 								echo "</tr>";
 						}
 						echo "</table>";

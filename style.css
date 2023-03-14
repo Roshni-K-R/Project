@@ -31,7 +31,7 @@ body{
 
 }
 .new_header{
-    background-image: url(img/newimage1.jpg);
+    background-image: url(../img/newimage1.jpg);
 }
 .header_top img{
 	border-radius: 50%;
@@ -102,7 +102,7 @@ table,th,td{
      padding: 10px;
  }
  th{
- background-color:#1e1616;
+ background-color:#222225;
  color: white;
 }
 td{

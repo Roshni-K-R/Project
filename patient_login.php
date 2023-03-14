@@ -1,11 +1,6 @@
 <?php session_start();  ?>
-<?php include('header.php'); ?>
-
-
-
-
-
-	<!-- this is for donor registraton -->
+<?php include('header.php'); ?> 
+	//<!-- this is for donor registraton -->
 	<div class="login" style="background-color:#fff;">
 		<h3 class="text-center" style="background-color:#272327;color: #fff;">Patient Login</h3>
 			<div class="formstyle" style="float: right;padding:20px;border: 1px solid lightgrey;margin-right:415px; margin-bottom:30px;background-color:#f3f3f8;color:#141313;">
@@ -20,7 +15,7 @@
 
 					<span style="color:#000;">Not a member yet?</span> <a href="patient_regi.php" title="create a account" target="" style="color:#000;">&nbsp;Sign Up</a> <br>
 
-
+                     
 					<!-- login validation -->
 			<?php 
 					$_SESSION['patient']="";

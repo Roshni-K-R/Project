@@ -29,7 +29,7 @@
 					if($count>=1){
 						echo "<table border='1' align='center' cellpadding='32'>
 							<tr>
-								
+								<th>Booking Id</th>
 								<th>Dr.Name</th>
 								<th>Contact</th>
 								<th>Expert at</th>
@@ -43,6 +43,7 @@
 							</tr>";
 						while($row=mysqli_fetch_array($result)){
 								echo "<tr>";
+								echo "<td>".$row['booking_id']."</td>";
 								echo "<td>".$row['dname']."</td>";
 								echo "<td>".$row['dcontact']."</td>";
 								
@@ -53,9 +54,12 @@
 								
 								echo "<td>".$row['dates']."</td>";
 								echo "<td>".$row['tyme']."</td>";
-								echo "<td><button type='submit' name='submit' style='color:#000;'>Update</button><button type='submit' name='submit' style='color:#000;'>Delete</button></td>";
 								
-								echo "</tr>";
+								?>
+								<!-- <a href=update.php><button type='submit' name='submit' style='color:#000;'>Update</button> -->
+								<td><a href="deleteAppointment.php?booking_id=<?php echo $row['booking_id'];?>"><button type='submit' name='submit' style='color:#000;'>Delete</a></button></td>
+								<?php
+							echo "</tr>";
 						}
 						echo "</table>";
 					}
@@ -86,8 +90,5 @@
  
 			
 
-
-
-	
 </body>
-</html>
+</html>	

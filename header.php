@@ -11,6 +11,9 @@
 	</style>
 </head>
 <body>
+	<div class="menu" style=" color:antiquewhite;font-size:25px;text-align:center;">
+		Online Doctor Appointment System
+	</div>
 	<div class="container-fluid">
 		<div class="header_top"  >
 			<!-- <a href="index.php"><img src="img/dash2.jpg" alt="logo.png img"></a> -->

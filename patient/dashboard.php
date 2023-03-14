@@ -16,9 +16,12 @@
 // }
 
 ?>
+	<div class="menu" style=" color:antiquewhite;font-size:25px;text-align:center;">
+		Online Doctor Appointment System
+	</div>
 	<?php include('uptomenu.php'); ?>
 
-
+	<?php include('header.php'); ?>
 
 
 

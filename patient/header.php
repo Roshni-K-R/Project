@@ -8,7 +8,12 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="menu" style=" color:antiquewhite;font-size:25px;text-align:center;">
+		Online Doctor Appointment System
+	</div>
+	
+	<div class="myheader" style="background:url(img/newimage1.jpg);">
+	</div>
 <?php
 
 //if($_SESSION['donorstatus']!==""){

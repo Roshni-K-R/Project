@@ -14,12 +14,12 @@
 
 	<!-- nivo slider starts -->
 	<div class="col-md-12 sliderImg">
-	     <img src="img/doctor4.jpg" alt="">
+	     <img src="img/MEHTA.jpg" alt="">
 		 <img src="img/doctor5.jpg" alt="">
-		<img src="img/doctor3.jpg" alt="">
+		<img src="img/ROSHNI.webp" alt="">
 		<img src="img/hstu8.jpg"   alt="">
 		<img src="img/doctor3.jpg" alt="">
-		<img src="img/doctor4.jpg" alt="">
+		<img src="img/AFREEN.jpg" alt="">
 	</div>
 	<!-- nivo slider ends -->
 
@@ -27,17 +27,15 @@
 	<div class="main_content">
 		<div class="col-md-8">
 			<article>
-			<h3 style="font-weight: bold;font-family:inherit;">Finds Doctors from anywhere anytime!</h3><hr>
-				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt et dolores neque eaque. Labore, dicta similique ipsam odit saepe obcaecati suscipit ducimus, commodi dolores animi sed beatae, quia nulla facilis.lorem 
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, doloribus quisquam eaque inventore consectetur sapiente itaque aliquid quae tempore. Eveniet iusto obcaecati magni qui laboriosam saepe unde, totam odio excepturi
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, doloribus quisquam eaque inventore consectetur sapiente itaque aliquid quae tempore. Eveniet iusto obcaecati magni qui laboriosam saepe unde, totam odio excepturi.</p>
+			<h3 style="font-weight: bold;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Finds Doctors from anywhere anytime!</h3><hr>
+				<p class="text-justify">Improving healthcare for the underprivileged has been the focus for many doctors. Most of us live in urban India, where the healthcare facilities are relatively better (you would know if you ever visit a village or rural area, where one has to travel miles to meet a doctor). There are plenty of doctors, nurses and assisting medical staff. Private hospitals charge more than the government hospitals, but the former also provide us with timely, best quality healthcare. </p>
 			</article>
 		</div>
 		<div class="col-md-4">
 			<h3 class="text-center" style="font-weight:bold;font-family:inherit;">Doctors Appoinment...?</h3><hr>
 			<ul class="text-justify">
 				
-				Totam, doloribus quisquam eaque inventore consectetur sapiente itaque aliquid quae tempore. Eveniet iusto obcaecati magni qui laboriosam saepe unde, totam odio excepturi.  Eveniet iusto obcaecati magni qui laboriosam saepe unde, totam odio excepturi
+			A Doctor is a person who helps to keep human health in healthy condition. Doctors help patients to get relief from their pain. Doctors play a very essential role in human life. We can say Doctors are the incarnation of the god. In India, we celebrate National Doctor’s Day on July of 1st to thank physicians and doctors for their dedicated services to patients. 
 			</ul>
 		</div>
 

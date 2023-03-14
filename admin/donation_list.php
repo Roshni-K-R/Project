@@ -7,7 +7,7 @@
 
 
 <!-- this is for donor registraton -->
-	<div class="dashboard" style="background-color:#fff;">
+	<div class="dashboard" >
 		<h3 class="text-center" style="background-color:#272327;color: #fff;padding: 5px;">Who have donated Blood</h3>
 		
 		
@@ -42,7 +42,9 @@
 								echo "<td>".$row['address']."</td>";
 								echo "<td>".$row['unit']."</td>";
 								echo "<td>".$row['dates']."</td>";
-								echo "<td><button type='submit' name='submit' style='color:#000;'>Delete</button></td>";
+								?>
+								<td><a href="deleteDonor.php?donation_id=<?php echo $row['donation_id'];?>"><button type='submit' name='submit' style='color:#000;'>Delete</a></button></td>
+								<?php
 								echo "</tr>";
 						}
 						echo "</table>";

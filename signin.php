@@ -14,6 +14,7 @@
 					<div class="col-md-4" style="float: right;padding:20px 115px;border: 1px solid lightgrey;margin-right:415px; margin-bottom:30px;background-color:#f3f3f8;color:#141313;">
 						<h4 class="text-center;"><a href="patient_login.php">Patient login</a></h4>
 						<h4 class="text-center;"><a href="doctors/doctorlogin.php">Doctor login</a></h4>
+				
 					</div>
 					<div class="col-md-4"></div>
 					

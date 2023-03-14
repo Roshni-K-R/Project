@@ -30,7 +30,7 @@ body{
 
 /*this is for present menu*/
 .menu{
-    background-color:#55e750!important;
+    background-color:#121312!important;
     width:auto;
     height:35px
 }
@@ -38,8 +38,8 @@ body{
     min-height:37px!important;
 }
 .navbar-default {
-    background-color:#55e750!important;
-    border-color: #55e750;
+    background-color:#0f0f0f!important;
+    border-color: #0f0f0f;
 }
 .menu ul{margin:0;
     /*padding:3px 6px;*/
@@ -92,7 +92,7 @@ table,th,td{
      border: 1px solid #000;width: 1060px;margin: 10px auto;
  }
  th{
- background-color: rgb(171, 18, 241);color: white;
+ background-color: rgb(171, 18, 241);color: white;text-align: center;
 }
 td{
 	padding: 3px;
